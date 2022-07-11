@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.lemint.book.springboot.web.HelloControllerTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2022-07-08T02:16:25" hostname="JE-KIM-MBP.local" time="0.003">
+<testsuite name="com.lemint.book.springboot.web.HelloControllerTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2022-07-11T13:58:06" hostname="JE-KIM-MBP.local" time="0.002">
   <properties/>
-  <testcase name="initializationError" classname="com.lemint.book.springboot.web.HelloControllerTest" time="0.002">
+  <testcase name="initializationError" classname="com.lemint.book.springboot.web.HelloControllerTest" time="0.001">
     <failure message="java.lang.Exception: The class com.lemint.book.springboot.web.HelloControllerTest is not public." type="java.lang.Exception">java.lang.Exception: The class com.lemint.book.springboot.web.HelloControllerTest is not public.
 	at org.junit.validator.PublicClassValidator.validateTestClass(PublicClassValidator.java:29)
 	at org.junit.runners.ParentRunner.applyValidators(ParentRunner.java:134)
@@ -47,7 +47,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="initializationError" classname="com.lemint.book.springboot.web.HelloControllerTest" time="0.0">
+  <testcase name="initializationError" classname="com.lemint.book.springboot.web.HelloControllerTest" time="0.001">
     <failure message="java.lang.Exception: Test class should have exactly one public constructor" type="java.lang.Exception">java.lang.Exception: Test class should have exactly one public constructor
 	at org.junit.runners.BlockJUnit4ClassRunner.validateOnlyOneConstructor(BlockJUnit4ClassRunner.java:158)
 	at org.junit.runners.BlockJUnit4ClassRunner.validateConstructor(BlockJUnit4ClassRunner.java:147)

@@ -1,5 +1,6 @@
 package com.lemint.book.springboot.web;
 
+import com.lemint.book.springboot.config.auth.LoginUser;
 import com.lemint.book.springboot.config.auth.dto.SessionUser;
 import com.lemint.book.springboot.service.posts.PostsService;
 import com.lemint.book.springboot.web.dto.PostsResponseDto;
@@ -19,13 +20,20 @@ public class IndexController {
   private final HttpSession httpSession;
 
   @GetMapping("/")
-  public String index(Model model) {
+  public String index(Model model, @LoginUser SessionUser user) {
     model.addAttribute("posts", postsService.findAllDesc());
     /**
      * 앞서 작성된 CustomerOAuthUserService에서 로그인 성공 시 세션에서 SessionUser를 저장하게 구현
      * 로그인을 성공하면 httpSession.getAttribute("user") 을가져와서 SessionUser에 담는다.
+     *
+     * 1. SessionUser user = (SessionUser) httpSession.getAttribute("user");
+     * 선언으로 진행 -> 자주 쓰일 예정  -> 리팩토링 : 메소드 인자로 세션 값을 바로 받을 수 있게 변경
+     * config.auth @LoginUser
+     *
+     * SessionUser user = (SessionUser) httpSession.getAttribute("user"); 기존 코드
      * */
-    SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+
 
     if(user != null) {
       model.addAttribute("userName", user.getName());

@@ -17,12 +17,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class IndexControllerTest {
 
   @Autowired
-  public TestRestTemplate restTemplate;
+  private TestRestTemplate restTemplate;
 
   @Test
   public void 메인페이지_로딩() {
+    //when
     String body = this.restTemplate.getForObject("/", String.class);
-    assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
+
+    //then
+    assertThat(body).contains("스프링부트로 시작하는 웹 서비스");
   }
 
 }

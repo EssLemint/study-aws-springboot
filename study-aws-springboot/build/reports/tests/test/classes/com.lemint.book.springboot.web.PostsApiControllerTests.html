@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.386s</div>
+<div class="counter">0.259s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,168 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Posts_등록"></a>
-<h3 class="failures">Posts_등록</h3>
-<span class="code">
-<pre>org.springframework.web.client.ResourceAccessException: I/O error on POST request for &quot;https://localhost56876/api/v1/posts&quot;: localhost56876; nested exception is java.net.UnknownHostException: localhost56876
-	at app//org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:744)
-	at app//org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
-	at app//org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:445)
-	at app//org.springframework.boot.test.web.client.TestRestTemplate.postForEntity(TestRestTemplate.java:489)
-	at app//com.lemint.book.springboot.web.PostsApiControllerTests.Posts_등록(PostsApiControllerTests.java:54)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.12/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at app//org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at app//org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at app//org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at app//org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at app//org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at app//org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at app//org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at app//org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at app//org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at app//org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.12/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: java.net.UnknownHostException: localhost56876
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.base/java.net.Socket.connect(Socket.java:609)
-	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:299)
-	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
-	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
-	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:373)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:203)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:189)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:168)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:735)
-	... 53 more
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Posts_수정"></a>
-<h3 class="failures">Posts_수정</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: 
-Expecting:
- &lt;302 FOUND&gt;
-to be equal to:
- &lt;200 OK&gt;
-but was not.
-	at java.base@11.0.12/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@11.0.12/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base@11.0.12/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at app//com.lemint.book.springboot.web.PostsApiControllerTests.Posts_수정(PostsApiControllerTests.java:88)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.12/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at app//org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at app//org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at app//org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at app//org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at app//org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at app//org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at app//org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at app//org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at app//org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at app//org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.12/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -233,26 +78,36 @@ but was not.
 </tr>
 </thead>
 <tr>
-<td class="failures">Posts_등록</td>
-<td class="failures">0.247s</td>
-<td class="failures">failed</td>
+<td class="success">Posts_등록된다</td>
+<td class="success">0.222s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Posts_수정</td>
-<td class="failures">0.139s</td>
-<td class="failures">failed</td>
+<td class="success">Posts_수정된다</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2022-07-11 22:58:13.047  INFO 7275 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lemint.book.springboot.web.PostsApiControllerTests], using SpringBootContextLoader
-2022-07-11 22:58:13.048  INFO 7275 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.lemint.book.springboot.web.PostsApiControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-07-11 22:58:13.049  INFO 7275 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.lemint.book.springboot.web.PostsApiControllerTests]: PostsApiControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-07-11 22:58:13.051  INFO 7275 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.lemint.book.springboot.Application for test class com.lemint.book.springboot.web.PostsApiControllerTests
-2022-07-11 22:58:13.052  INFO 7275 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2022-07-11 22:58:13.053  INFO 7275 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52d68eb9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a557a52, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ab959e8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@39d4f046, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f910283, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6e2764c9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e5106fc, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@70199db0, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@274b0c2a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@721f3526, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@149fab7f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@28d74041, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5702232d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5cbf9aee]
+<pre>2022-07-25 16:52:44.322  INFO 4807 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lemint.book.springboot.web.PostsApiControllerTests], using SpringBootContextLoader
+2022-07-25 16:52:44.323  INFO 4807 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.lemint.book.springboot.web.PostsApiControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-25 16:52:44.323  INFO 4807 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.lemint.book.springboot.web.PostsApiControllerTests]: PostsApiControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-25 16:52:44.325  INFO 4807 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.lemint.book.springboot.Application for test class com.lemint.book.springboot.web.PostsApiControllerTests
+2022-07-25 16:52:44.326  INFO 4807 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-07-25 16:52:44.326  INFO 4807 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@59a49dbc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6dde03ce, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b0df4ba, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f647464, org.springframework.test.context.support.DirtiesContextTestExecutionListener@12504d49, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f8dfcbe, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4be171d1, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@76afb9d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@17c0d43c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@77c8b276, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37672aa7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@670199c5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7671c02d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@44189797]
+2022-07-25 16:52:44.341  INFO 4807 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2022-07-25 16:52:44.341  INFO 4807 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-25 16:52:44.345  INFO 4807 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+Hibernate: 
+    insert 
+    into
+        posts
+        (id, created_date, modified_date, author, content, title) 
+    values
+        (null, ?, ?, ?, ?, ?)
 Hibernate: 
     select
         posts0_.id as id1_0_,
@@ -264,12 +119,64 @@ Hibernate:
     from
         posts posts0_
 Hibernate: 
+    select
+        posts0_.id as id1_0_,
+        posts0_.created_date as created_2_0_,
+        posts0_.modified_date as modified3_0_,
+        posts0_.author as author4_0_,
+        posts0_.content as content5_0_,
+        posts0_.title as title6_0_ 
+    from
+        posts posts0_
+Hibernate: 
+    delete 
+    from
+        posts 
+    where
+        id=?
+2022-07-25 16:52:44.560  INFO 4807 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2022-07-25 16:52:44.561  INFO 4807 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-07-25 16:52:44.564  INFO 4807 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+Hibernate: 
     insert 
     into
         posts
         (id, created_date, modified_date, author, content, title) 
     values
         (null, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        posts0_.id as id1_0_0_,
+        posts0_.created_date as created_2_0_0_,
+        posts0_.modified_date as modified3_0_0_,
+        posts0_.author as author4_0_0_,
+        posts0_.content as content5_0_0_,
+        posts0_.title as title6_0_0_ 
+    from
+        posts posts0_ 
+    where
+        posts0_.id=?
+Hibernate: 
+    update
+        posts 
+    set
+        created_date=?,
+        modified_date=?,
+        author=?,
+        content=?,
+        title=? 
+    where
+        id=?
+Hibernate: 
+    select
+        posts0_.id as id1_0_,
+        posts0_.created_date as created_2_0_,
+        posts0_.modified_date as modified3_0_,
+        posts0_.author as author4_0_,
+        posts0_.content as content5_0_,
+        posts0_.title as title6_0_ 
+    from
+        posts posts0_
 Hibernate: 
     select
         posts0_.id as id1_0_,
@@ -297,7 +204,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 2022. 7. 11. 오후 10:58:14</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 2022. 7. 25. 오후 4:52:46</p>
 </div>
 </div>
 </body>
